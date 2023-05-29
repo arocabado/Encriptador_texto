@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="reset.css">
+    <!-- Estilo de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400&display=swap" rel="stylesheet">
+    <!-- -------------------------------- -->
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="logo" class="logo">
+    </header>
+    
+    <main>
+        <section>
+            <textarea class="msg" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="b-encriptar" onclick="botones(event)" value="1">Encriptar</button>
+                <button class="b-desencriptar" onclick="botones(event)" value="2">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="msg-encriptado" cols="20" rows="10"></textarea>
+            <div>
+                <button class="b-copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+<script src="./script.js"></script>
+</body>
+</html>
